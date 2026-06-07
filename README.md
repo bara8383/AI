@@ -2,6 +2,18 @@
 
 このリポジトリは、NumPyで実装した最小構成のDecoder-only Transformer言語モデルです。
 
+## 最終ゴール
+
+このプロジェクトの最終ゴールは、**いろいろな意味で人間を超えるAI**を作ることです。
+
+ここでの「人間を超える」は、単に会話がうまいAIではなく、学習能力、推論能力、記憶能力、自律的な行動、道具の利用、自己改善、安全性など、複数の観点で人間の限界を超えるAIを目指す、という意味です。
+
+## Mark1の位置づけ
+
+Mark1は最終形そのものではなく、そのための最初の実験機です。
+
+まずはTransformerの内部構造をブラックボックスにせず、Tokenizer、Embedding、Self-Attention、Multi-Head Attention、FFN、LayerNorm、デコード処理を自分で追えるようにすることを目的とします。NumPy中心の小さな実装から始め、AIの仕組みを理解しながら、Mark2以降のより高度なAIへ発展させます。
+
 ## 前提環境
 - Python 3.10+
 - NumPy
@@ -54,4 +66,3 @@ python main.py \
 ```bash
 python train_min.py
 ```
-
